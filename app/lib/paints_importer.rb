@@ -52,7 +52,9 @@ class PaintsImporter
     imported_data.filter_map do |item|
       next if item["type"] != "skin" || item["image"].blank?
 
-      name_parts = item["name"].split(" - ")
+      name = item["name"].tr("–", "-")
+      name_parts = name.split(" - ")
+
       {
         name: cleanup_name(name_parts.last),
         model_name: cleanup_name(name_parts.first),
@@ -128,6 +130,8 @@ class PaintsImporter
   end
 
   private def paint_mapping(name)
+    name = name.tr("–", "-")
+
     paint_map = {
       "2950 Invictus Constellation Blue and Gold" => "2950 Invictus Blue and Gold",
       "2950 Invictus Retaliator Midnight Blue and Gold" => "2950 Invictus Blue and Gold",
@@ -244,6 +248,9 @@ class PaintsImporter
     starfarer = ["Starfarer", "Starfarer Gemini"]
     cutter = ["Cutter", "Cutter Scout", "Cutter Rambler"]
     x1 = ["X1", "X1 Velocity", "X1 Force"]
+    ursa = ["Ursa", "Ursa Medivac", "Ursa Fortuna", "Lynx"]
+    mpuv = ["MPUV Cargo", "MPUV Personnel", "MPUV Tractor"]
+    sabre = ["Sabre", "Sabre Comet", "Sabre Raven", "Sabre Firebird"]
 
     models_map = {
       "Cutter" => cutter,
@@ -256,6 +263,9 @@ class PaintsImporter
       "Retaliator Grey" => tali,
       "Fury Variants" => fury,
       "Fury" => fury,
+      "Ursa" => ursa,
+      "MPUV TRACTOR" => mpuv,
+      "MPUV" => mpuv,
       "Origin 100 series" => series_100,
       "100 Series Deck the Hull" => series_100,
       "100 Series IceBreak" => series_100,
@@ -366,7 +376,8 @@ class PaintsImporter
       "600i 2954 Auspicious Red Dragon" => series_600,
       "X1 2954 Auspicious Red Dog" => x1,
       "X1 2954 Auspicious Red Dragon" => x1,
-      "Scorpius Stinger Black Orange" => scorpius
+      "Scorpius Stinger Black Orange" => scorpius,
+      "Sabre" => sabre
     }
 
     return models_map[name.strip] if models_map[name.strip].present?

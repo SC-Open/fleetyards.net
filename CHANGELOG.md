@@ -2,6 +2,70 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [5.31.28](https://github.com/fleetyards/fleetyards/compare/v5.31.27...v5.31.28) (2024-05-24)
+
+
+### Bug Fixes
+
+* **sync:** replace missleading - char to solve import issues for the Tali ([5a828c6](https://github.com/fleetyards/fleetyards/commit/5a828c6904ecb6f4f09e675dfd2a17f5206785a4))
+
+### [5.31.27](https://github.com/fleetyards/fleetyards/compare/v5.31.26...v5.31.27) (2024-05-23)
+
+
+### Bug Fixes
+
+* **sync:** further update tali mapping ([728b9d4](https://github.com/fleetyards/fleetyards/commit/728b9d46db0c48bc765cdf9244706fd93af2e2dd))
+
+### [5.31.26](https://github.com/fleetyards/fleetyards/compare/v5.31.25...v5.31.26) (2024-05-22)
+
+
+### Bug Fixes
+
+* **sync:** update mapping for idris k kit ([22e09b6](https://github.com/fleetyards/fleetyards/commit/22e09b641c27a43da96da54b19ab89213f2efcc1))
+
+### [5.31.25](https://github.com/fleetyards/fleetyards/compare/v5.31.24...v5.31.25) (2024-05-21)
+
+
+### Bug Fixes
+
+* **sync:** add additional mapping to solve issues for Tali Modules ([fc9762a](https://github.com/fleetyards/fleetyards/commit/fc9762a4a6da2202bd707837ce5b2914c5c12346))
+
+### [5.31.24](https://github.com/fleetyards/fleetyards/compare/v5.31.23...v5.31.24) (2024-05-21)
+
+
+### Bug Fixes
+
+* **sync:** add mapping for tali modules ([b9c77df](https://github.com/fleetyards/fleetyards/commit/b9c77df78db508b4dc42f98c0ffea15e52a43c42))
+
+### [5.31.23](https://github.com/fleetyards/fleetyards/compare/v5.31.22...v5.31.23) (2024-05-19)
+
+### [5.31.22](https://github.com/fleetyards/fleetyards/compare/v5.31.21...v5.31.22) (2024-05-19)
+
+
+### Bug Fixes
+
+* **sync:** update mapping for modules and upgrades ([afda651](https://github.com/fleetyards/fleetyards/commit/afda651ecca5893a13ffc52cb6650775c44c11bb))
+* **sync:** update mapping for new Retaliator Modules ([f4cd6ec](https://github.com/fleetyards/fleetyards/commit/f4cd6ec4b51c6a481658f0b9c93803025c66f5ec))
+
+### [5.31.21](https://github.com/fleetyards/fleetyards/compare/v5.31.20...v5.31.21) (2024-05-18)
+
+### [5.31.20](https://github.com/fleetyards/fleetyards/compare/v5.31.19...v5.31.20) (2024-05-18)
+
+### [5.31.19](https://github.com/fleetyards/fleetyards/compare/v5.31.18...v5.31.19) (2024-05-18)
+
+### [5.31.18](https://github.com/fleetyards/fleetyards/compare/v5.31.17...v5.31.18) (2024-05-18)
+
+### [5.31.17](https://github.com/fleetyards/fleetyards/compare/v5.31.16...v5.31.17) (2024-05-18)
+
+### [5.31.16](https://github.com/fleetyards/fleetyards/compare/v5.31.15...v5.31.16) (2024-05-18)
+
+
+### Bug Fixes
+
+* **sync:** update mapping for hornet heartseeker ([85129f1](https://github.com/fleetyards/fleetyards/commit/85129f115040612807868efa1067fc240b28b6a0))
+
+### [5.31.15](https://github.com/fleetyards/fleetyards/compare/v5.31.14...v5.31.15) (2024-05-17)
+
 ### [5.31.14](https://github.com/fleetyards/fleetyards/compare/v5.31.13...v5.31.14) (2024-05-17)
 
 ### [5.31.13](https://github.com/fleetyards/fleetyards/compare/v5.31.12...v5.31.13) (2024-05-17)
