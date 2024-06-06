@@ -77,7 +77,7 @@ gem "dynamic_fields_for_rails"
 gem "bourbon"
 gem "coffee-rails"
 gem "sass-rails"
-gem "sprockets-rails"
+gem "sprockets-rails", ">= 3.5.0"
 
 gem "jquery-rails"
 gem "js-routes"
