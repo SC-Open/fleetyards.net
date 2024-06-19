@@ -51,7 +51,7 @@ gem "postmark-rails"
 gem "cancancan"
 
 gem "devise"
-gem "devise-two-factor"
+gem "devise-two-factor", ">= 5.1.0"
 gem "rqrcode"
 
 gem "useragent"
