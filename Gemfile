@@ -137,7 +137,7 @@ gem "flipper-ui"
 gem "flipper-active_record"
 
 # openapi
-gem "rspec-rails", require: false
+gem "rspec-rails", ">= 6.1.3", require: false
 gem "rswag-specs", require: false
 
 group :development do
