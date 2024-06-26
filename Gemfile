@@ -109,7 +109,7 @@ gem "typhoeus"
 
 gem "rack-cors", require: "rack/cors"
 
-gem "sentry-rails"
+gem "sentry-rails", ">= 5.18.0"
 gem "sentry-ruby"
 gem "sentry-sidekiq"
 
@@ -169,7 +169,7 @@ end
 group :test do
   gem "faker"
   gem "minitest-ci"
-  gem "minitest-rails"
+  gem "minitest-rails", ">= 7.1.1"
   gem "mocha", require: false
   gem "rails-perftest"
   gem "shoulda"
