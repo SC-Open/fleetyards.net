@@ -53,6 +53,7 @@ class PaintsImporter
       next if item["type"] != "skin" || item["image"].blank?
 
       name = item["name"].tr("–", "-")
+      name = name.tr(" ", " ").strip
       name_parts = name.split(" - ")
 
       {
@@ -146,6 +147,10 @@ class PaintsImporter
       "100 Series Sand Wave" => "Sand Wave",
       "600i BIS 2951" => "Best in Show 2951",
       "MPUV BIS 2951" => "Best in Show 2951",
+      "Mole Lovestruck" => "Lovestruck",
+      "Lovestruck s" => "Lovestruck",
+      "2954 Auspicious Red Dragon" => "Auspicious Red Dragon",
+      "2954 Auspicious Red Dog" => "Auspicious Red Dog",
       "Origin X1 Scarlet" => "Scarlet",
       "Mercury Star Runner BIS 2951" => "Best in Show 2951",
       "Star Runner Silver Spark" => "Silver Spark",
@@ -189,6 +194,8 @@ class PaintsImporter
       "Hercules Starlifter BIS 2951" => "Best in Show 2951",
       "Aurora SXSW 2015" => "SXSW 2015",
       "2950 Invictus Aurora Blue and Gold" => "Invictus Blue and Gold",
+      "Hornet Mk I Invictus Blue and Gold" => "Invictus Blue and Gold",
+      "Hornet Mk I - Invictus Blue and Gold" => "Invictus Blue and Gold",
       "2950 Invictus Aurora Light and Dark Grey" => "Light and Dark Grey",
       "2950 Invictus Auora Green and Gold" => "Green and Gold",
       "2950 Invictus Aurora Green and Gold" => "Green and Gold",
@@ -197,18 +204,20 @@ class PaintsImporter
       "Crusader Ares Radiance" => "Radiance",
       "Crusader Ares Ember" => "Ember",
       "Freelancer - Black" => "Black",
+      "Freelancer - Black Paint" => "Black",
+      "Freelancer - Black Paint " => "Black",
       "600i 2953 Best in Show" => "Best in Show 2953",
       "Corsair 2953 Best in Show" => "Best in Show 2953",
       "Vulture 2953 Best in Show" => "Best in Show 2953",
       "Redeemer 2953 Best in Show" => "Best in Show 2953",
-      "100i 2954 Auspicious Red Dog" => "2954 Auspicious Red Dog",
-      "100i 2954 Auspicious Red Dragon" => "2954 Auspicious Red Dragon",
-      "400i 2954 Auspicious Red Dog" => "2954 Auspicious Red Dog",
-      "400i 2954 Auspicious Red Dragon" => "2954 Auspicious Red Dragon",
-      "600i 2954 Auspicious Red Dog" => "2954 Auspicious Red Dog",
-      "600i 2954 Auspicious Red Dragon" => "2954 Auspicious Red Dragon",
-      "X1 2954 Auspicious Red Dog" => "2954 Auspicious Red Dog",
-      "X1 2954 Auspicious Red Dragon" => "2954 Auspicious Red Dragon",
+      "100i 2954 Auspicious Red Dog" => "Auspicious Red Dog",
+      "100i 2954 Auspicious Red Dragon" => "Auspicious Red Dragon",
+      "400i 2954 Auspicious Red Dog" => "Auspicious Red Dog",
+      "400i 2954 Auspicious Red Dragon" => "Auspicious Red Dragon",
+      "600i 2954 Auspicious Red Dog" => "Auspicious Red Dog",
+      "600i 2954 Auspicious Red Dragon" => "Auspicious Red Dragon",
+      "X1 2954 Auspicious Red Dog" => "Auspicious Red Dog",
+      "X1 2954 Auspicious Red Dragon" => "Auspicious Red Dragon",
       "Scorpius Stinger Black Orange" => "Stinger"
     }
 
@@ -237,9 +246,12 @@ class PaintsImporter
     scorpius = ["Scorpius", "Scorpius Antares"]
     hornet_mk1 = [
       "F7C-S Hornet Ghost Mk I", "F7C-R Hornet Tracker Mk I", "F7C-M Super Hornet Heartseeker Mk I",
-      "F7C-M Super Hornet Mk I", "F7C Hornet Wildfire Mk I", "F7C Hornet Mk I"
+      "F7C-M Super Hornet Mk I", "F7C Hornet Wildfire Mk I", "F7C Hornet Mk I", "F7A Hornet Mk I"
     ]
-    hornet_mk2 = ["F7C Hornet Mk II", "F7A Hornet Mk II"]
+    hornet_mk2 = [
+      "F7C Hornet Mk II", "F7A Hornet Mk II", "F7C-R Hornet Tracker Mk II",
+      "F7C-S Hornet Ghost Mk II", "Hornet Mk II"
+    ]
     mercury = ["Mercury", "Mercury Star Runner"]
     roc = %w[ROC ROC-DS]
     prospector = ["Prospector"]
@@ -250,7 +262,13 @@ class PaintsImporter
     x1 = ["X1", "X1 Velocity", "X1 Force"]
     ursa = ["Ursa", "Ursa Medivac", "Ursa Fortuna", "Lynx"]
     mpuv = ["MPUV Cargo", "MPUV Personnel", "MPUV Tractor"]
-    sabre = ["Sabre", "Sabre Comet", "Sabre Raven", "Sabre Firebird"]
+    sabre = ["Sabre", "Sabre Comet", "Sabre Raven", "Sabre Firebird", "Sabre Peregrine"]
+    zeus = ["Zeus Mk II MR", "Zeus Mk II CL", "Zeus Mk II ES"]
+    terrapin = ["Terrapin", "Terrapin Medic"]
+    spirit = ["A1 Spirit", "C1 Spirit", "E1 Spirit"]
+    f8c = ["F8C Lightning", "F8C Lightning Executive Edition"]
+    merlin = ["P-52 Merlin", "P-72 Archimedes"]
+    guardian = ["Guardian", "Guardian QI"]
 
     models_map = {
       "Cutter" => cutter,
@@ -283,10 +301,19 @@ class PaintsImporter
       "Freelancer Series" => freelancer,
       "Freelancer" => freelancer,
       "Freelancer - Black" => freelancer,
+      "Freelancer - Black Paint" => freelancer,
+      "Freelancer - Black Paint " => freelancer,
       "2950 Invictus Freelancer Storm Surge" => freelancer,
       "Anvil Hornet" => hornet_mk1,
+      "Hornet Mk I" => hornet_mk1,
       "F7 Hornet Mk I" => hornet_mk1,
+      "Hornet Mk I Invictus Blue and Gold" => hornet_mk1,
+      "Hornet Mk I - Invictus Blue and Gold" => hornet_mk1,
+      "Hornet Mk II" => hornet_mk2,
       "F7 Hornet Mk II" => hornet_mk2,
+      "F7A Hornet Mk II" => hornet_mk2,
+      "F7C Hornet Mk II" => hornet_mk2,
+      "Mole Lovestruck" => ["MOLE"],
       "MOLE Dolivine" => ["MOLE"],
       "MOLE Aphorite" => ["MOLE"],
       "MOLE Hadanite" => ["MOLE"],
@@ -306,7 +333,10 @@ class PaintsImporter
       "Cutlass" => cutlass,
       "Drake Cutlass Ghoulish Green" => cutlass,
       "Spirit" => ["A1 Spirit", "C1 Spirit", "E1 Spirit"],
-      "Zeus" => ["Zeus Mk II MR", "Zeus Mk II CL", "Zeus Mk II ES"],
+      "CSV" => ["CSV-SM", "CSV-FM"],
+      "Zeus" => zeus,
+      "Zeus Mk II" => zeus,
+      "Starlancer" => ["Starlancer MAX", "Starlancer TAC", "Starlancer BLD"],
       "Gladius Series" => gladius,
       "Gladius" => gladius,
       "Aegis Gladius" => gladius,
@@ -337,10 +367,12 @@ class PaintsImporter
       "Khartu-al" => ["Khartu-Al"],
       "Tumbril Cyclone" => cyclone,
       "Tumrbil Cyclone" => cyclone,
-      "F8C" => ["F8C Lightning", "F8C Lightning Executive Edition"],
+      "F8C" => f8c,
       "Aegis Vanguard" => vanguard,
       "Vanguard Series" => vanguard,
       "Vanguard" => vanguard,
+      "Terrapin" => terrapin,
+      "Terrapin Medic" => terrapin,
       "Mustang" => ["Mustang Omega", "Mustang Gamma", "Mustang Delta", "Mustang Beta", "Mustang Alpha"],
       "2950 Invictus Valkyrie Light Grey" => ["Valkyrie"],
       "2950 Invictus Valkyrie Sage" => ["Valkyrie"],
@@ -377,7 +409,11 @@ class PaintsImporter
       "X1 2954 Auspicious Red Dog" => x1,
       "X1 2954 Auspicious Red Dragon" => x1,
       "Scorpius Stinger Black Orange" => scorpius,
-      "Sabre" => sabre
+      "Sabre" => sabre,
+      "C1 Spirit 2954 Best In Show" => spirit,
+      "F8C Lightning 2954 Best In Show" => f8c,
+      "Archimedes & Merlin" => merlin,
+      "Guardian" => guardian
     }
 
     return models_map[name.strip] if models_map[name.strip].present?

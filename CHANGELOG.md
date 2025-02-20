@@ -2,6 +2,138 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [5.31.54](///compare/v5.31.53...v5.31.54) (2025-02-19)
+
+
+### Bug Fixes
+
+* **sync:** update Reclaimer BIS mapping 1f54523
+
+### [5.31.53](///compare/v5.31.52...v5.31.53) (2025-02-14)
+
+
+### Bug Fixes
+
+* **sync:** check extension on modal open call 8482a45
+
+### [5.31.52](///compare/v5.31.51...v5.31.52) (2024-12-22)
+
+### [5.31.51](///compare/v5.31.50...v5.31.51) (2024-12-22)
+
+### [5.31.50](///compare/v5.31.49...v5.31.50) (2024-12-15)
+
+
+### Bug Fixes
+
+* **paints-importer:** update mapping for new merlin and archimedes paints d42c22d
+
+### [5.31.49](///compare/v5.31.48...v5.31.49) (2024-12-04)
+
+
+### Bug Fixes
+
+* **paints:** update mapping 5ff84a2
+
+### [5.31.48](///compare/v5.31.47...v5.31.48) (2024-12-02)
+
+
+### Bug Fixes
+
+* **loaders:** update loaner and paints mapping for new IAE ships 64a6fdf
+
+### [5.31.47](///compare/v5.31.46...v5.31.47) (2024-11-29)
+
+
+### Bug Fixes
+
+* **sync:** check paints after models b96efdc
+
+### [5.31.46](///compare/v5.31.45...v5.31.46) (2024-11-28)
+
+### [5.31.45](https://github.com/fleetyards/fleetyards/compare/v5.31.44...v5.31.45) (2024-11-04)
+
+
+### Bug Fixes
+
+* **loaners:** show loaners correctly if multiple loaners of the same are present ([9fa868d](https://github.com/fleetyards/fleetyards/commit/9fa868deae1a7fa92d3ba796af75e9838edbba26))
+
+### [5.31.44](https://github.com/fleetyards/fleetyards/compare/v5.31.43...v5.31.44) (2024-11-03)
+
+### [5.31.43](https://github.com/fleetyards/fleetyards/compare/v5.31.42...v5.31.43) (2024-11-03)
+
+
+### Bug Fixes
+
+* **loaners:** update script to create loaners ([632f975](https://github.com/fleetyards/fleetyards/commit/632f9757a7c59285cc2009d675a08ac32f774484))
+
+### [5.31.42](https://github.com/fleetyards/fleetyards/compare/v5.31.41...v5.31.42) (2024-11-03)
+
+
+### Bug Fixes
+
+* **loaners:** remove typo ([fb3f168](https://github.com/fleetyards/fleetyards/commit/fb3f168c5eeeb609291c1058dc001d8d860a18bb))
+
+### [5.31.41](https://github.com/fleetyards/fleetyards/compare/v5.31.40...v5.31.41) (2024-11-03)
+
+
+### Bug Fixes
+
+* **loaners:** unhide loaners if no visible is left ([64b8159](https://github.com/fleetyards/fleetyards/commit/64b81594e093ce806fdc70dd2a9fb7fa3cc52cf5))
+
+### [5.31.40](https://github.com/fleetyards/fleetyards/compare/v5.31.39...v5.31.40) (2024-10-24)
+
+
+### Bug Fixes
+
+* **sync:** add additional mapping for A.T.L.S. ([4e41ca3](https://github.com/fleetyards/fleetyards/commit/4e41ca304e5cd1a5c69d567ea105b2c43b5327d7))
+
+### [5.31.39](https://github.com/fleetyards/fleetyards/compare/v5.31.38...v5.31.39) (2024-10-20)
+
+
+### Bug Fixes
+
+* **paints:** update importer mapping for Starlancer, Zeus Mk II and CSV ([22ad7cf](https://github.com/fleetyards/fleetyards/commit/22ad7cf58500bc3f79f12f9da6d9b9d1a68fcaa5))
+
+### [5.31.38](https://github.com/fleetyards/fleetyards/compare/v5.31.37...v5.31.38) (2024-10-14)
+
+### [5.31.37](https://github.com/fleetyards/fleetyards/compare/v5.31.36...v5.31.37) (2024-10-14)
+
+### [5.31.36](https://github.com/fleetyards/fleetyards/compare/v5.31.35...v5.31.36) (2024-09-28)
+
+
+### Bug Fixes
+
+* **sync:** add ATLS to mapping ([61823f9](https://github.com/fleetyards/fleetyards/commit/61823f994a38fc1314f5425822a8bf09e186ceea))
+
+### [5.31.35](https://github.com/fleetyards/fleetyards/compare/v5.31.34...v5.31.35) (2024-09-03)
+
+
+### Bug Fixes
+
+* **mails:** update mailgun password ([ba1257d](https://github.com/fleetyards/fleetyards/commit/ba1257da576b269d887e94d93fe472b6d9274d8e))
+
+### [5.31.34](https://github.com/fleetyards/fleetyards/compare/v5.31.33...v5.31.34) (2024-09-03)
+
+### [5.31.33](https://github.com/fleetyards/fleetyards/compare/v5.31.32...v5.31.33) (2024-05-26)
+
+
+### Bug Fixes
+
+* **sync:** resolve issue with custom names ([1241102](https://github.com/fleetyards/fleetyards/commit/12411020c8e68b9035f79437eae3787aeb413cc1))
+
+### [5.31.32](https://github.com/fleetyards/fleetyards/compare/v5.31.31...v5.31.32) (2024-05-26)
+
+### [5.31.31](https://github.com/fleetyards/fleetyards/compare/v5.31.30...v5.31.31) (2024-05-25)
+
+### [5.31.30](https://github.com/fleetyards/fleetyards/compare/v5.31.29...v5.31.30) (2024-05-25)
+
+### [5.31.29](https://github.com/fleetyards/fleetyards/compare/v5.31.28...v5.31.29) (2024-05-24)
+
+
+### Bug Fixes
+
+* **sync:** add mapping for F7A Mk I ([81887a4](https://github.com/fleetyards/fleetyards/commit/81887a48728d28502cf16298890958b562c90dde))
+
 ### [5.31.28](https://github.com/fleetyards/fleetyards/compare/v5.31.27...v5.31.28) (2024-05-24)
 
 
